@@ -42,6 +42,9 @@ Signals Visualization (Matplotlib)
 
 ---
 
+![Signals Visualization](signals_analysis.svg)
+
+
 ##  Setup Instructions
 
 ```bash
@@ -51,8 +54,38 @@ Signals Visualization (Matplotlib)
 
 2️) Prepare Session Cookies
     Log in to https://x.com in your Chrome or Brave browser.
+    Open in inspect Mode -> Click on Application
+    OR
     Use the Cookie-Editor extension to export all cookies for the x.com domain as a JSON file.
     Save it as cookies.json in the project’s root directory.
+
+    Example json:
+
+        [
+        {
+        "domain": ".x.com",
+        "expirationDate": 1844514452,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "auth_token",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "your_auth_token"
+        },
+        {
+        "domain": ".x.com",
+        "expirationDate": 1844514452,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "ct0",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "your_ct0_value"
+        }
+    ]
+
 
 3) Security Tip:
     Add cookies.json to .gitignore to avoid committing session tokens.
@@ -66,7 +99,7 @@ Signals Visualization (Matplotlib)
     pip install -r requirements.txt
 
 6) Configure Browser Path (Optional)
-    In src/scraper.py, update the brave_path if you’re using Brave:
+    In src/scraper.py, update the brave_path(with browser executable location) if you’re using Other Browser:
 
         brave_path = "/usr/bin/google-chrome"
 
@@ -77,6 +110,7 @@ Signals Visualization (Matplotlib)
 ───────────────────────────────────────────────────────────────
     tweets.parquet        → Processed tweet dataset in columnar format
     signals_analysis.png  → Visualization of aggregated sentiment & tweet volume
+
 
 - Example Insights
 ───────────────────────────────────────────────────────────────
