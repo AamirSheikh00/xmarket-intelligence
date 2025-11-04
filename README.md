@@ -42,7 +42,7 @@ Signals Visualization (Matplotlib)
 
 ---
 
-![Signals Visualization](signals_analysis.svg)
+![Signals Visualization](signals_analysis.png)
 
 
 ##  Setup Instructions
