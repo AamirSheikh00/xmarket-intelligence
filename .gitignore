@@ -1,0 +1,20 @@
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+
+# Output & temp files
+output/
+*.parquet
+*.png
+*.log
+*.csv
+*.tmp
+
+# Sensitive files
+cookies.json

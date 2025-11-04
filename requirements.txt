@@ -1,0 +1,16 @@
+# # Core language
+# python>=3.10
+
+# Web scraping
+selenium
+webdriver-manager
+
+# Data processing & storage
+pandas
+pyarrow
+
+# Sentiment analysis
+nltk
+
+# Visualization
+matplotlib
