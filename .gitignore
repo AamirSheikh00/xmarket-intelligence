@@ -11,7 +11,6 @@ ENV/
 # Output & temp files
 output/
 *.parquet
-*.png
 *.log
 *.csv
 *.tmp
